@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Seguridad - TecnoMarket</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
+
+    <!-- Header Sencillo con Tríada CIA -->
+    <header class="bg-slate-900/90 border-b border-slate-800 sticky top-0 z-10 backdrop-blur">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+                <h1 class="text-xl font-extrabold tracking-tight text-white">
+                    Tecno<span class="text-blue-500">Market</span>
+                </h1>
+                <p class="text-xs text-slate-400">Políticas de Seguridad Informática</p>
+            </div>
+            <!-- Pilar CIA -->
+            <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                <span class="px-3 py-1 rounded-full bg-blue-950 text-blue-300 border border-blue-800/60">Confidencialidad</span>
+                <span class="px-3 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-800/60">Integridad</span>
+                <span class="px-3 py-1 rounded-full bg-purple-950 text-purple-300 border border-purple-800/60">Disponibilidad</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-10 space-y-12">
+
+        <!-- Sección 1: Principio de Mínimo Privilegio y Control de Acceso -->
+        <section class="space-y-4">
+            <div class="border-b border-slate-800 pb-2">
+                <h2 class="text-lg font-bold text-white">1. Principio de Mínimo Privilegio y Control de Acceso</h2>
+                <p class="text-xs text-slate-400">Cada usuario cuenta únicamente con los permisos estrictamente necesarios para cumplir sus tareas.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+                    <h3 class="font-bold text-blue-400 text-sm mb-1">Clientes</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">Registrarse, iniciar sesión, consultar productos, comprar y ver sus propios pedidos.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+                    <h3 class="font-bold text-emerald-400 text-sm mb-1">Empleados</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">Gestionar pedidos y productos exclusivamente dentro de las funciones asignadas.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+                    <h3 class="font-bold text-purple-400 text-sm mb-1">Administradores</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">Administrar usuarios, catálogos, pedidos y configuraciones autorizadas.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-4">
+                    <h3 class="font-bold text-amber-400 text-sm mb-1">Personal Técnico</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">Mantenimiento de servidores, bases de datos, aplicaciones y copias de seguridad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Las 4 Políticas Oficiales de Seguridad -->
+        <section class="space-y-4">
+            <div class="border-b border-slate-800 pb-2">
+                <h2 class="text-lg font-bold text-white">2. Las 4 Políticas Oficiales de Seguridad</h2>
+                <p class="text-xs text-slate-400">Normativas obligatorias para proteger los activos de TecnoMarket.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-5">
+                <!-- Política 1 -->
+                <article class="bg-slate-900 border border-slate-800 border-l-4 border-l-blue-500 rounded-xl p-5 flex flex-col justify-between space-y-3">
+                    <div>
+                        <span class="text-[11px] font-bold uppercase text-blue-400">Política 01</span>
+                        <h3 class="text-base font-bold text-white mb-2">Contraseñas y Control de Acceso</h3>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            <li>Prohibido guardar contraseñas en texto plano; uso obligatorio de <strong>Hash + Salt</strong>.</li>
+                            <li><strong>Autenticación Multifactor (MFA)</strong> obligatoria para administradores.</li>
+                            <li>Bloqueo temporal ante intentos fallidos y baja inmediata al dejar la empresa.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-2 border-t border-slate-800 text-[11px] text-slate-400">
+                        <strong>Revisión:</strong> Semestral o ante incidentes de credenciales.
+                    </div>
+                </article>
+
+                <!-- Política 2 -->
+                <article class="bg-slate-900 border border-slate-800 border-l-4 border-l-emerald-500 rounded-xl p-5 flex flex-col justify-between space-y-3">
+                    <div>
+                        <span class="text-[11px] font-bold uppercase text-emerald-400">Política 02</span>
+                        <h3 class="text-base font-bold text-white mb-2">Protección de Datos y Privacidad</h3>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            <li>Acceso restringido solo a la información indispensable para cada tarea.</li>
+                            <li>Prohibido compartir datos de clientes o copiarlos a dispositivos personales.</li>
+                            <li>Comunicaciones cifradas mediante protocolo seguro <strong>HTTPS</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-2 border-t border-slate-800 text-[11px] text-slate-400">
+                        <strong>Revisión:</strong> Semestral o ante cambios importantes en los sistemas.
+                    </div>
+                </article>
+
+                <!-- Política 3 -->
+                <article class="bg-slate-900 border border-slate-800 border-l-4 border-l-purple-500 rounded-xl p-5 flex flex-col justify-between space-y-3">
+                    <div>
+                        <span class="text-[11px] font-bold uppercase text-purple-400">Política 03</span>
+                        <h3 class="text-base font-bold text-white mb-2">Copias de Seguridad y Recuperación</h3>
+                        <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                            <li>Backups automáticos y periódicos de bases de datos, código y archivos críticos.</li>
+                            <li>Almacenamiento cifrado en ubicaciones separadas del sistema principal.</li>
+                            <li>Pruebas periódicas de restauración para asegurar la integridad de los datos.</li>
+                        </ul>
+                    </div>
+                    <div class="pt-2 border-t border-slate-800 text-[11px] text-slate-400">
+                        <strong>Revisión:</strong> Trimestral con simulacros de restauración.
+                    </div>
+                </article>
+
+                <!-- Política 4 -->
+                <article class="bg-slate-900 border border-slate-800 border-l-4 border-l-amber-500 rounded-xl p-5 flex flex-col justify-between space-y-3">
+                    <div>
+                        <span class="text-[11px] font-bold uppercase text-amber-400">Política 04</span>
+                        <h3 class="text-base font-bold text-white mb-2">Gestión de Incidentes de Seguridad</h3>
+                        <p class="text-xs text-slate-300 mb-2">Reporte inmediato obligatorio; prohibido ocultar fallas o borrar evidencias/logs.</p>
+                        <div class="bg-slate-950 p-2.5 rounded-lg border border-slate-800 text-[11px] text-slate-300">
+                            <strong class="text-amber-400 block mb-1">5 Pasos Operativos:</strong>
+                            1. Detectar y reportar → 2. Analizar alcance → 3. Contener y aislar → 4. Restaurar sistemas → 5. Investigar causa raíz.
+                        </div>
+                    </div>
+                    <div class="pt-2 border-t border-slate-800 text-[11px] text-slate-400">
+                        <strong>Revisión:</strong> Anual o tras cada incidente relevante.
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección 3: Mecanismos de Cumplimiento y Revisión -->
+        <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-3">
+            <h2 class="text-base font-bold text-white">3. Mecanismos de Cumplimiento y Revisión</h2>
+            <p class="text-xs text-slate-300 leading-relaxed">
+                La seguridad de TecnoMarket combina <strong>controles técnicos automáticos</strong> (cifrado de bases de datos, validación estricta con consultas <strong>SQL parametrizadas</strong> y registros de auditoría) con la <strong>capacitación continua del personal</strong> en buenas prácticas, asegurando que la protección dependa tanto de la tecnología como del comportamiento responsable.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer con Créditos del Equipo -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-6 text-center text-xs text-slate-400">
+        <div class="max-w-5xl mx-auto px-4 space-y-1">
+            <p class="font-semibold text-slate-200">TecnoMarket – Trabajo Práctico de Seguridad Informática</p>
+            <p>Alumnos: Luciano Ocampo • Mauro Quintana • Lucas Lopez | Profesor: Jesús Cabrera</p>
+        </div>
+    </footer>
+
+</body>
+</html>
